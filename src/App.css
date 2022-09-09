@@ -1,0 +1,98 @@
+body {
+   background-color: #bfd1f586;
+   min-width: 425px;
+}
+
+.selector-wrapper {
+   padding: 20px;
+   margin: 0 auto;
+   max-width: 80%;
+   box-shadow: 0 0 15px 0 #d5cebb;
+   background: #F6F5F4;
+}
+
+.selector-input {
+   width: 100%;
+   margin: 0;
+   border: none;
+   background: black;
+   color: #FFF;
+   resize: none;
+   outline: none;
+   overflow: hidden;
+   font-size: 28px;
+   line-height: 36px;
+   font-family: monospace;
+   padding: 10px;
+   white-space: pre-wrap;
+   word-break: break-word;
+}
+
+.specification-wrapper {
+   padding: 10px;
+   margin: 0 auto;
+   width: 75%;
+}
+
+.description-wrapper {
+   display: flex;
+   justify-content: space-around;
+   margin: 0 0 20px 50px;
+}
+
+.description-wrapper span {
+   text-decoration: underline;
+   font-size: 16px;
+   font-style: italic;
+}
+
+
+span {
+   font-size: 22px;
+   word-break: break-word;
+}
+
+ol {
+   counter-reset: ol-numbers;
+   padding: 0;
+   margin: 5px 0 0 5px;
+}
+
+ol li {
+   color: green;
+   letter-spacing: 10px;
+   position: relative;
+   font-size: 36px;
+   list-style: none;
+}
+
+ol li::before {
+   counter-increment: ol-numbers;
+   content: counter(ol-numbers);
+   /* Используй это правило, чтобы заменить стилизацию 
+   списка на романские цифры*/
+   /* content: counter(ol-numbers, upper-roman); */
+   background: darkblue;
+   letter-spacing: 0;
+   color: #FFF;
+   width: 1.2em;
+   height: 1.2em;
+   margin-right: 40px;
+   border-radius: 50%;
+   display: inline-grid;
+   place-items: center;
+   line-height: 1.2em;
+   font-size: 22px;
+}
+
+.footer {
+   max-width: 80%;
+   margin: 0 auto;
+}
+
+code {
+   background-color: #eee8d5;
+   border: 1px solid #ccc;
+   border-radius: 3px;
+   padding: 0 5px;
+}
